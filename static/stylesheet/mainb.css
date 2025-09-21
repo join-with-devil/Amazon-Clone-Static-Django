@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* carousal */
+.caro {
+    /* background-color: red; */
+    /* width: 100%; */
+    height: 480px;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.cards {
+    background-color: #e3e6e6;
+    height: fit-content;
+    width: 100%;
+    margin: -150px auto 0 auto;
+    /* border-radius: 18px; */
+    /* box-shadow: 0 6px 24px rgba(0, 0, 0, 0.13); */
+    z-index: 1;
+    position: relative;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6px 3%;
+    gap: 30px;
+
+
+}
+
+.cards .card {
+    background-color: #ffffff;
+    height: 450px;
+    width: 300px;
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    gap: 7px;
+    padding: 10px 6%;
+
+}
+
+.cards .card img {
+    height: 120px;
+    width: 120px;
+}
+
+.cards .card p {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+}
+
+/* bikes cart  */
+.bikes {
+    /* margin-top: 7px; */
+    border: 1px solid white;
+    background-color: #e3e6e6;
+    width: 100%;
+    height: 300px;
+    padding: 0 2%;
+    margin-top: -5px;
+}
+
+.bikes img {
+    height: 190px;
+    width: 300px;
+}
+
+.add {
+    background-color: #e3e6e6;
+    padding-top: 20px;
+    height: 270px;
+}
+
+.add-in {
+    margin-top: -6px;
+    background-color: #ffffff;
+    height: 240px;
+    width: 65%;
+    margin-left: 240px;
+}
+
+#fash1 {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+#fashion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dis,
+#prime {
+    width: 95%;
+    margin-left: 35px;
+}
+
+#fash2,
+#fash3,
+#fash4,
+#fash5,
+#fash6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.recommend-card {
+    max-width: 100%;
+    padding: 40px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.recommend-card p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}

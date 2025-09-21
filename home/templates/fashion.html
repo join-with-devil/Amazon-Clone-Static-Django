@@ -1,0 +1,199 @@
+{% extends "main.html" %}
+{% block content %}
+<style>
+
+    main {
+        background-color: #fff;
+    }
+
+    #fash1 {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    #fashion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #dis,
+    #prime {
+        width: 95%;
+        margin-left: 35px;
+    }
+
+    #fash2,
+    #fash3,
+    #fash4,
+    #fash5,
+    #fash6 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .recommend-card {
+        max-width: 100%;
+        padding: 40px 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .recommend-card p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+</style>
+
+
+
+    <div class="navunder">
+        <ul style="display: flex;gap: 30px;font-size: 13px;list-style: none;">
+            <li>Electronics Mobiles & Accessories</li>
+            <li>Laptops & Accessories</li>
+            <li>TV & Home Entertainment</li>
+            <li>Audio</li>
+            <li>Cameras</li>
+            <li>Computer Peripherals</li>
+            <li>Smart Technology</li>
+            <li>Musical Instruments</li>
+            <li>Office & Stationery</li>
+        </ul>
+    </div>
+
+    <main>
+        <section id="fash1">
+            <h3>Amazon Fashion</h3>
+            <hr>
+            <div id="fashion">
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/mens/mens-1._SS300_QL85_FMpng_.png" alt="">
+                    <p>Men's Clothing</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/womens._SS300_QL85_FMpng_.png" alt="">
+                    <p>Women's Clothing</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/kids._SS300_QL85_FMpng_.png" alt="">
+                    <p>Kid's Fashion</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/footwear._SS300_QL85_FMpng_.png" alt="">
+                    <p>Footwear</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/luggage__bags._SS300_QL85_FMpng_.png" alt="">
+                    <p>Luggage & Bags</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/jewellery._SS300_QL85_FMpng_.png" alt="">
+                    <p>Jewellery</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/jewellery._SS300_QL85_FMpng_.png" alt="">
+                    <p>Watches</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/watches._SS300_QL85_FMpng_.png" alt="">
+                    <p>beauty</p>
+                </div>
+                <div>
+                    <img height="100" width="100" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Halos/beauty._SS300_QL85_FMpng_.png" alt="">
+                    <p>Handbag</p>
+                </div>
+            </div>
+        </section>
+        <img id="dis" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/July/Stripes/2_pc._CB789547456_.jpg" alt="">
+        <section>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="padding: 0 3%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/tophero/PC/Clearance_Store._CB542298117_.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/tophero/PC/Coupons._CB542298117_.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <img id="prime" width="100%" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/herotator/Pc/Apparel_1500x400._CB544017564_.jpg" alt="">
+        <h5 style="margin-left: 70px;">Shop Clothing</h5>
+        <section id="fash2">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/ClothingSBC/1._CB543856130_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/ClothingSBC/6._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/ClothingSBC/3._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/SSflip/Unrec/ClothingSBC/5._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/ClothingSBC/4._CB543856130_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/SSflip/Unrec/ClothingSBC/19._CB548566394_.png" alt="">
+        </section>
+        <br>
+        <h5 style="margin-left: 70px;">Shop Footwear</h5>
+        <section id="fash3">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/FootwearSBC/Flipflops-2._CB543858204_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/FootwearSBC/Flipflops-3._CB543858204_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/FootwearSBC/Flipflops-1._CB543858204_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/FootwearSBC/Flipflops._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/FootwearSBC/Flipflops-4._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Unrec/FootwearSBC/Flipflops-5._SY530_QL85_FMpng_.png" alt="">
+        </section>
+        <br>
+        <h5 style="margin-left: 70px;">Budget Add-ons</h5>
+        <section id="fash4">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Post/Jupiter/BAU/Unrec/BudgetAddOns/Women_Watches._CB543855118_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Post/Jupiter/BAU/Unrec/BudgetAddOns/Men_Watches._CB543855118_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Post/Jupiter/BAU/Unrec/BudgetAddOns/Men_Jewelry._CB543855118_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Post/Jupiter/BAU/Unrec/BudgetAddOns/Women_Jewelry._CB543855118_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Post/Jupiter/BAU/Unrec/BudgetAddOns/Handbags._CB543855118_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/Post/Jupiter/BAU/Unrec/BudgetAddOns/Eyewear._CB543855118_.png" alt="">
+        </section>
+        <br>
+        <h5 style="margin-left: 70px;">Big Brand Offers</h5>
+        <section id="fash5">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/TopBrands/Symbol_564x1012._SX564_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/TopBrands/Van_Heusen_IW_564x1012._SX564_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/TopBrands/Lavie_sport_564x1012._SX564_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/TopBrands/Dove_564x1012._SX564_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/TopBrands/Lakme_564x1012._SX564_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/TopBrands/Sparx_Shoes_564x1012._SX564_QL85_FMpng_.png" alt="">
+        </section>
+        <br>
+        <h5 style="margin-left: 70px;">Kid's Corner</h5>
+        <section id="fash6">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/KidsCorner/Kids._CB543739937_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/KidsCorner/Kids-4._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/KidsCorner/Kids-2._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/KidsCorner/Kids-5._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/KidsCorner/Kids-3._SY530_QL85_FMpng_.png" alt="">
+            <img height="200" width="200" src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/UnRec/KidsCorner/Kids-1._SY530_QL85_FMpng_.png" alt="">
+
+        </section>
+        <div class="recommend-card">
+            <p style="font-size: 20px;font-weight: bold;">See personalized recommendations</p>
+            <button class="sign-in-button">Sign in</button>
+            <div class="new-customer">
+                New customer? <a href="">Start here.</a>
+            </div>
+    </main>
+
+    {% endblock content %}
+    

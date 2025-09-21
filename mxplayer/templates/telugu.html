@@ -1,0 +1,99 @@
+{% extends 'mx.html' %}
+<!-- {% block title %}Watch latest Telugu Movies{% endblock %} -->
+{% block content %}
+
+<style>
+    #main{
+        /* margin-left: 60px; */
+        background-color: #070d0e;
+    }
+    .images{
+        height: 168px;
+        display: flex;
+        gap: 12px;
+        margin-left: 60px;
+        overflow-x: scroll;
+        scrollbar-color: transparent transparent;
+    }
+    .pic{
+        border-radius: 4px;
+    }
+    .h5{
+        height: 50px;
+        color: white;
+        /* border: 2px solid red; */
+        margin-left: 60px;
+        display: flex;
+        align-items: end;
+    }
+</style>
+        
+    <section id="main">
+        <article>
+            <div class="h5"><h5>Dubbed Superhits</h5></div>
+            <div class="images">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/64bb4a8e76cd98bcc099f73ed54a66b6c9523b6ce0795ae826b0b61741e15843.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/18bd117c0e9a9d7b9d5b36881635fa2bb75121193b496bddf10564b099317e25.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/03242d00b489598ab42455592ae6af6a77b6b65ddf349d504d4b1cb1ad07f6ed.__SX330__SY186__QL60__._TTW_.png" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/ade8eba467d569718a0adf70a20174c188534e1054da86bdf632f99ecdb74910.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/95277ffc5c54df5782f2a5f905837f333ecea0cebd79649787196df102a47e4b.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/4cad9b13e050c70668dd3f89d100c9187713029d5bd889b2d2793141b40adc3d.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+            </div>
+        </article>
+        <article>
+            <div class="h5"><h5>Bollywood Adventures</h5></div>
+            <div class="images">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/05a1b29f66aafe442dea9030933f2620f97c94dbc0bafe6e49baa11237ef7ed0.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/9ed52ac51f9eb4739edc341e0f93faeb54df0518fffd0699e6b003d27b638e23.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+            </div>
+        </article>
+        <article>
+            <div class="h5"><h5>RomComs</h5></div>
+            <div class="images">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/854918c54199eacc290b8744f0f738997c7a393f52f569e6cfa901d486cb9f7c.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/9327d270f9b0fdc3113cd3ac8b632aba69fd9e082efa1822a6926d7740a77ad1.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/e544ceff8b5cf1fc0eae67af3990a23a8d74bf9541bb63fdaa33f520b53dbe2c.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/64bb4a8e76cd98bcc099f73ed54a66b6c9523b6ce0795ae826b0b61741e15843.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/18bd117c0e9a9d7b9d5b36881635fa2bb75121193b496bddf10564b099317e25.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/49a8396e60f136dc45e10a3b74d4bb466793e76e2465a0c93e02eeb78387cd33.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+            </div>
+        </article>
+        <article>
+            <div class="h5"><h5>Romantic Mystery</h5></div>
+            <div class="images">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/67853aee4d9a637ad80e80eaaabbfcda2a2b97f94a8b1472c99c842e4d31f50c.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/dbfa89645edab88e30bfec53f7aa561f6045a843f94e55fcc402f4f9cb23bfa6.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/8bcb21332661f7d5f65eff55ee8224b5a0568b67ac22fceb78e2764769e80144.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/6f07f10518cead5e680f1dd65e943ded409a8311be35f0723a0d608030cc95cd.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/01e42c7ba14b0e25804042961ab6a9ca8092e6296ed4a8794fcacead4c5e369d.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/b2c77c740b8d42d8b25f592b9befc19cdee0e0fbe95b6cac3a32eedbd5cdb357.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+            </div>
+            
+        </article>
+        <article>
+            <div class="h5"><h5>Romantic Tales</h5></div>
+            <div class="images">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/89a96d89604de0ae8f11cd8a9d09d1c9d6894ad3ed82d0a893dfc9ebd21b14be.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/f110a91729f8291b56577f75c37604f126e10b298fbdc69853a3449843244b4c.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/f213a52e9669dd2ee178853c463320af409229fcfc1064dc596723cbf19c0d87.__SX330__SY186__QL60__._TTW_.png" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/434f3df481a123f3bcd4b91046096b1572f8c5285dcc4bb7a92990d416460194.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/5b267f9ae12b49b784ea25129d87eedde2d126aa420958641b97a41f3242cc4f.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/73538135c8f9d08b6288756c07a747a5c5d84df1ae973e5f56e617ea952c9e25.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+            </div>
+        </article>
+
+        <article>
+            <div class="h5"><h5>International Drama</h5></div>
+            <div class="images">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/139ab68d522f05c1156beb971f8d8216179f754f63db1e5626f23b2a276f66f2.__SX330__SY186__QL60__._TTW_.png" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/f7aa9154b181a4b1dce16510e900583179cda43f2fc45b90dcd5b2b74f45be63.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/8e9aaecddc0deab9f8f031a1556f63094bc9076c1d4e3aa9eb185c4b55b5fa18.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/a3a99e13526d563dd6e72b00868ac542b2ffb8bbe982ec9433950b44bf49b30e.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/e6306aeab98328541fb3c893ed19c290da332a8a89fabbbd5d6214a618bb7b6e.__SX330__SY186__QL60__._TTW_.png" alt="">
+                <img  class="pic" src="https://m.media-amazon.com/images/S/pv-target-images/86c141fdf888e342e5be311c31fbe5b040f535134691b851aebaef624e261e86.__SX330__SY186__QL60__._TTW_.jpg" alt="">
+            </div>
+        </article>
+    </section>
+
+
+{% endblock content %}

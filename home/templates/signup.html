@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up page</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "Amazon Ember", sans-serif;
+    }
+
+    .outer-div {
+        height: 420px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .entire {
+        height: 370px;
+        width: 370px;
+
+    }
+
+    .image {
+        height: 59px;
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+    }
+
+    img {
+        height: 40px;
+        width: 130px;
+    }
+
+    .inner-div {
+        margin-top: 4px;
+        margin-left: 10px;
+        height: 300px;
+        width: 350px;
+        border-radius: 8px;
+        padding: 25px;
+        border: 1px solid #d5d9d9;
+    }
+
+    .one {
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .two {
+        height: 20px;
+        font-size: 14px;
+    }
+
+    .button {
+        margin-top: 15px;
+        height: 32px;
+        width: 300px;
+        font-size: 14px;
+        background-color: gold;
+        border-radius: 25px;
+        text-align: center;
+        align-content: center;
+    }
+
+    #text {
+        height: 60px;
+        width: 320px;
+        align-content: center;
+        font-size: 12px;
+        letter-spacing: .6px;
+    }
+
+    .text1 {
+        height: 22px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .text2 {
+        color: #2162a4;
+        font-size: 14px;
+    }
+
+    .final {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .help {
+        color: #2162a4;
+        display: flex;
+        justify-content: space-evenly;
+        width: 320px;
+        font-size: 12px;
+
+    }
+
+    .copy {
+        display: flex;
+        justify-content: space-evenly;
+        height: 20px;
+        width: 320px;
+        color: rgb(106, 102, 102);
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <div class="outer-div">
+        <div class="entire">
+            <div class="image"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAmCAYAAADjufgGAAANtUlEQVR4AeyaC3CVxRWAz/2DDRaIER2VAIaHCjhWUEAYhfKoL9DwsGUAbQaqxvE5jqDYqi0gKjaCr2kFCSKYAklpy0vB6jSAwQ7YRgEdSKwoiZKAD4jhlbQ11/323v/P/o97TTAXMCRz99+zZ8+ePf/Zs2fP2T9WuPnvpNeAJc1/J70Gmo3gpDcBkbhGUFFRIbNnPy2DBg+W9PR0admypa5pT5s+XegP0iF4+u2yceNGTbbz450yafL9mh88gKHVnerxTW2t5OXny4gRo6RXr0vk1qzbJCdnvoBX3TF/8GUuxphywgf5Dxw4EDiWcchQnwL/miM1gXx4P2TlnZDhu+aFCXLBkwIMjvfkfRlv80Ef9CWyxDQCJu/cubPcf/9keWvDBikrK5Oamhpd054+bZrQD51XwCVLlgr9dsnOniUoqk/vPvLM07M1P3gA9+/fX1gMFDx61A0yftw4Wb16pWzdukVemp8jt92WJUOHDhX6vfPQRonndT1Pz8cYU074IP9FF10kW7ZuhdxVVixfqeVBju8qvMuOD4td4zEuFmzgwIFaVt4JGex5zz33XG3UrkGqgeEjFzwpwPDi/Xlfxtt80Mf48TepUYn7BRoB1sjkLHq8qemfOGFCoILNcV9XVcrdd98jlZWVJlrDLNrNN98iM7Of1IuvkZ4Hyv3DC3/0YEV7CpTo6/AgmGPkiBGCoj1dR93EKK/PyIgpM4x5X/QYtFHoN8u8eTkxeeXlLQk0JnP894F9RoCipkx5wMUTi56qdv6sWbOlZ89erj4M4ZVXcl04b2Pzpk16Z3vxdptFfnLmTLsZWOfmuufAs+ApTGJkQ0YKMpt9GMJra9aYKGnfob0kJycHFhehakDXtUsXBUV+GCVyR1qR57hxN8p9kyaLd+47br895tEZGSny2GMzbDCwXrJ4aSC+MZA+I0BRWLDNPDU1VTapRZw2dapMnjxJit4t8r1kUdG/bfLAGkNBMUvz8uS1NWt9hsQgaH46aJBAg8GBM0tx8Q6zKX9bvsLVxgCQDRkpBesKXP003nnnX1ROGTd2rFRXV/tKP3VEOURR4PHHn5A2bdroFmf3888/p2H7ccutWbJ06WJ5evYs+eCDD1w6Qp9PqQ1k0wbV0GBEhYWFghF7abZufc+L+s52fQl8RtC3bx/hhTIyRurFeuSR30q7du0cfkmWJZdfPsBpA+z65BOquOX32dmC0ocPu1YWLlroo8VI3lj7d02DwWEQJhFGYravvPJKl5xPKE+SZNW9TtcuXV0LwdiK8gqquIUgzbvD0QWGZQ9c8NICHRvZbeoZj06n0gVj+fkvxmjYfry84KW4AS5G/KfFuTJgwAC92TAIeyx1VVUVVUJKndai7FHe/Jx5smrVCtmy5T0tULTLqVq1buXA9QWuGz7cIe3Vs6d2wQ5CAVddfY0kn5qsoMjv/PMviAAxnhiTKSdtL+npp7f1ouK2CR4ffvghF02q8oQvvjjHhSsoWOdqQ2NuFDp7dO9O5RR2+q5dsTfLqNGjJMmqW44+fXo7YwGOHDlClZBSN2sAe4IfghpSqEFGmug9iwOGulAoid1hIs8++2yzKR3U+WwiUlJSzGZcmGibYNZO0+w0kQg77kCjExc/ccJEnQEZaJkzd67LE9K3Y8d2Kqekp3dyYBvo0cNtBOBLSv5DFVi6e4zG+/5eTxjI5CiRMY0At3hO2jk6ZSN9wkUSXCVKmDatI+dtQ96DIBYDJVUltcI4j1bOBx6Y4gteORY5wrwy7d+/z4U6LfU0V5tG62j8AGyX3Z99ZoO+OiXFz8NHlCBEoBGwo8hdcWH2vOxmzimiX84vG3+8arzU9SpFw0BNwyS2YPEILpG5PvKRacDHpIWPF2f2Hw28u3x3vYe1SWngpiibL1e3bSsjFn9e7zlsQp8RrFn7ur74sAmoWfw95Xuc6LdP376gj2vhXoFdbwpBVF1aWirECgSXQW7apAfGm9x0k/8yZvHixU42AJ1ZOqlLNLP9deXXZlPDBwNuKY/G22lm9XmccZlk3nmXZF52Vn2oXTQ+I5g7Z66LIFUFRkStZtB26OAhF83xaDz37LOuackmzAieTq/bBucteDaOOROPFyFKN3EmnNauvdmU0tJdrjaNqgMHqVylx4UXutqN2mh1sWSqu4Yx54vvr/qrUtlWuE32xlg2nxF489GBAwe5olZm8AZGiUxfmM9bCAQrKytd6CFDhrjaHBd79+514Q4dcmuBoJc4wkWkGuvWrdO3kcQbBJzMp9DOr1t3d+aCLHgUh0ABO7a7g0eFkkt69aSqVzlQFfy9g8HB5U3JUsdB1uuR3jfuaCupI++Ve/qlSacrrpExYwdLt4795bGA6wafEXgXtKysNMI1+uT89EbdKIH7/yhJwqvDRw775qjyKI0bPTNWYEBh4QbXN4gHp0wB7SscMxgHMQEBZ1pamnB/bxtDZuYvfWPy8vIdHJlGbm6u0wbIUPcu3jQSfKzSpqExQRCjEpGMNeWyp7hYSspWSFbLD2X1Rvd6MsxnBBerHJ4Ou7Dg7AYsnXghQwVjdp9Zc/9vthMJd+rU2XfPwGUM8rFQyOvN95EHY/3NIw8D6u8I3mNAd8R4cH//4rx5upe7FOIk3Yg+uPa15w/KNB6dUXeZFB0St2q4Jwhgd8YF0u2MKL5FuqR3jsKeymcEXrcKPbshReXt1w0fFvgRCBp2z7HyBkmWJf08V7ssMPKxa5HX6wWQkfLXvyyj+t7lwV9PcRkiBmXPjwcxJ8Bgenk2l9kfBDeKJwhiHIDzGcHkSZN8163muGT1wYX7fQIqGw+ObwLsEBuX6HqBuoZl3ljzENByD0/AaNOQ9q1ctcpuOjUpL8Eg78WY97Zs0d84+LJHuhk0D4u6cNEilyE4DA2A+RcuWGBg6gc2iieo31T+fyrhZo8PRliv+fLAnGubNm8WLlCeeipboEHZ4MxrW+/XuaBUjTQLnnZhjClze3UO233ULKDZj8ExL0o28cjDwm1XgRkR/qurV+tvICw078XiQc97ssgsONfj09QHMt6LMdDwPllZt+p084svvtAftkaNGsVQp0CPDOjFQUYB5CVlLSgoEDOzort169aCnMlqQ1GA09La0eWU9h06aAOjnwI/pzMKlOTfK1kz3xJ/gholqGfl8wSMI4Dhi9ihw4flo50f6YIi+J6AgqBJsix9b/DlV1+JjQNPQTnVxtc5lAzeLBvWr3d9vWOM2U+6Z/IoVfm/2Q/MvJrP4WotI7IiD/cEvAM0LDZfF5HBxoGnsMjwAKaEq1XG8XmRhD9bJ0JNW3XAA/lMWoXWP3Dopby8XPAieETkQF7eIcnyqxh++/fvd94fGD6aYfSBEcZ//8/lnT/nyrJ5b4qK/6Kjjq7yS2jwSbIsYcdRENzocsAkK8ICBVKcjmMIsNOQkZJkReQxp0+y/Di7P7xzudS+Pl7CizpKOLeH1K68XsJrb4zUtFdfF/frn80HA8OLsHjIYeMTV58lmfkVKvKfIZfpSa6SnH37JOda3ZCr5+yTyrfvkvRIUz3T5e6398nme+owCql/sbWjuxvw2K12T/5PpHbzo3K8jKEB0mrSWrXA4YI7JbR3o4RPSZVwigqfW50poR+10P36seddSTq8R4OJfjSYf4tkaVn34bXBw+0BjWYEoa6jRQY8L6HiHJEfiDFYQ3IkNPFjCU34VKwb35eksf/UdW2myqW7jLR1JOEWP3bgpgg0mhGgHAwhNGyFsKtkm/oGHzUGOVhO94lXWqdJ6JRTtVxc8Ehl5HRNsiwJteun8YJnaJkagZvo02r09zqrt4RuKBRROyn83/8LxlC7tLdo17v95RPvqFABYG3hFLFy06V22WAdEKKTcMVmKpGOwyJ1E342vhEoZYXUzrF+NldCQ1+oO1/V2Rp++6FI8EUgpgKy4xY7qIUPv/uMfJN/uQ4ApThXMNhQb3WNrIxYvYKEv9xGJVa3sbpuyo+EGIGtMI4HGfu+SPdMGxWpP10vBGQ6GlfBmQ4mlVHY7jhC1IhP5ebDygvZWYDOAIqyJVQV/XevM7uJNWa9hC69LzKpotd9Ci9Ro4h0NM1nQo0AlWmvMDBbK1k6KncL0izKQ3BkYBS4Y1I1jg5tGGrhdM6uFgWvEf6f///sNI6YQ9Ho3F4ZE7u89h+3S+3ywTr103yVFxKMjyMqOj/ZAN7KGr1eJLVbFCtSWxL5GBTqO9XBNWUg4UbgKE8p2bp2acQYlGdwpWEOkWi3LLZhqIULk7OrsxqvEV7YRWpz2knNnE6RxVWwxhFzKBq9w1XKF1a7XD5eKfJlSYSfwV+DyhhZfBmzUbS30kjjsXOZ9l6hDu7P0wZFkwKPnRHYasMYlGfgmAhd8YTIOZfaPfWuT2lRE7y4cTjoXa/OfGt8kWCMLH6SFfD6eJWuY8RCxjj8GtJ1otMGaOHYiMwxEbrwV2JlvCYsjDYIlVGQkjWKBCq14/gh2LNGvqrvAPSZr9LCuPxVv9Xvd3FJmlrncTMClyKV4rVBqIyCSxuLII3MQu1cUk28BTsZA7GPEWqNI3hT7l3TXXyHzkgwKs1HHT964U+C4M6lzwY2Tgwj8AqtjgzcNQtIqom3sG/z9O1eVoW+5dM4FdTh3jWd2sGME2VUXpbN7dgaODGNILa8zT0J0ECzESRAqT80ls1G8ENbsQTI+y0AAAD//xUiHrsAAAAGSURBVAMAr2/8sn2HkjEAAAAASUVORK5CYII="
+                    alt=""></div>
+            <div class="inner-div">
+                <div class="one">
+                    <p>Sign in or create account</p>
+                </div>
+                <div class="two"><b>Enter mobile number or email</b></div>
+                <div class="inputbar"><input style="height: 33px;width:298px;" type="text"></div>
+                <div style="height: 45px;display: flex;align-items: center;">
+                    <div class="button">Continue</div>
+                </div>
+                <div id="text">By continuing, you agree to Amazon's <a href="amazon.com">Conditions</a>
+                    <div><a href="amazon.com">of Use</a> and <a href="amazon.com">Privacy Notice</a>.</div>
+                </div>
+                <hr style="border: none;background-color: #d5d9d9;height: 1px;">
+                <div class="text1"><b>Buying for work?</b></div>
+                <div class="text2">Create a free business account</div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: none;background-color: #d5d9d9;height: 2px;">
+    <div class="final">
+        <div class="help">
+            <div>Conditions of Use</div>
+            <div>Privacy Notice</div>
+            <div>Help</div>
+        </div>
+        <div class="copy">&copy; 1996–2025, Amazon.com, Inc. or its affiliates</div>
+    </div>
+</body>
+</html>

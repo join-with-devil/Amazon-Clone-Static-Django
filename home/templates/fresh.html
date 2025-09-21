@@ -1,0 +1,480 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+
+    .fresh-navbar a {
+        font-size: 12px;
+        color: #0f1111;
+        text-decoration: none;
+        padding: 0 11px;
+    }
+    
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+        color: #111;
+    }
+    
+    /* Banner */
+    .banner {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .banner img {
+        width: 100%;
+        display: block;
+    }
+    
+    .banner-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 15px 25px;
+        border-radius: 4px;
+    }
+    
+    .banner-text h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    
+    .banner-text p {
+        font-size: 16px;
+    }
+    
+    /* Categories */
+    .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 20px;
+    }
+    
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 20px 20px;
+        background: #fff;
+    }
+    
+    .cat-card {
+        flex: 1 1 calc(20% - 15px);
+        min-width: 120px;
+        background: #fafafa;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .cat-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    
+    .cat-card p {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    
+    /* Product Sections */
+    .deals-section {
+        padding: 20px;
+    }
+    
+    .deals-section h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+    
+    .product-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    
+    .product-card h3 {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    
+    .price {
+        color: #B12704;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .discount {
+        color: green;
+        font-size: 13px;
+    }
+    
+    .recommend-card {
+        max-width: 100%;
+        padding: 40px 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        text-align: center;
+        margin: 30px auto;
+    }
+    
+    .recommend-card p {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .sign-in-button {
+        background-color: #ffd814;
+        border: none;
+        padding: 10px 50px;
+        font-size: 16px;
+        border-radius: 25px;
+        font-weight: bold;
+    }
+    
+    .sign-in-button:hover {
+        background-color: #f7ca00;
+    }
+    
+    .new-customer {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+    .new-customer a {
+        color: #007185;
+        text-decoration: none;
+    }
+</style>
+    
+    <section class="fresh-navbar"
+        style="padding: 0 40px;position: sticky;top: 0px;height: 55px;background-color: #ffffff;border-top: 10px solid #77BC1F;">
+        <div style="margin-top: 12px;display: flex;justify-content: start;align-items: center;">
+            <img src="https://m.media-amazon.com/images/I/31Ip4aURUpL.png" alt="" height="20px">
+            <div>
+                <a href="">Past Purchases</a>
+                <a href="">Alexa lists</a>
+                <a href="">Deals</a>
+                <a href="">Fruits & vegetables</a>
+                <a href="">Atta, rice & grains</a>
+                <a href="">Oil & ghee</a>
+                <a href="">Milk & dairy</a>
+                <a href="">Snacks & biscuits</a>
+                <a href="">Eggs, meat & fish</a>
+                <a href="">Bath & body</a>
+                <a href="">Laundry detergents</a>
+                <a href="">Baby care</a>
+            </div>
+        </div>
+    </section>
+
+    <main style="height: 3035px;position: relative;left: 0;">
+
+        <!-- Hero Banner -->
+        <div class="banner">
+            <img src="https://m.media-amazon.com/images/G/31/img18/Fresh/Sep21/CatStore/FV_1500X300.jpg"
+                alt="Amazon Fresh">
+            <div class="banner-text">
+                <h1>Up to 40% Off Groceries</h1>
+                <p>Daily essentials, fresh produce & more</p>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="section-title">Shop by Category</div>
+        <div class="categories">
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/Aug/Fruits__vegetables_3.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Atta_Rice__grains.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Dals__Pulses.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Oil__Ghee.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Masala_sugar__spices.jpg"
+                    alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Masala_sugar__spices.jpg"
+                    alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Breads__Bakery.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Cereals__dry_fruits.jpg"
+                    alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Tea_coffee__drink_mixes.jpg"
+                    alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Juices__cold_drinks.jpg"
+                    alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Sauces__spreads.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Eggs_meat__fish.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Noodles__pasta.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Snacks__biscuits.jpg" alt="">
+                <p></p>
+            </div>
+            <div class="cat-card">
+                <img src="https://m.media-amazon.com/images/G/31/img24/Fresh/July/Augart/Ready-to-eat__Frozen_Food.jpg"
+                    alt="">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="deals-section">
+            <p style="font-size: 20px;font-weight: bold;">Top Grocery Picks</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61luvSZNl6L.AC_SL240_.jpg" alt="">
+                    <h3>Basmati Rice</h3>
+                    <div class="price">₹399</div>
+                    <div class="discount">-15%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/616gnRopZDL.AC_SL240_.jpg" alt="">
+                    <h3>Freedom Oil</h3>
+                    <div class="price">₹179</div>
+                    <div class="discount">-10%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51KW6Z1Nb+L.AC_SL240_.jpg" alt="">
+                    <h3>Ghee</h3>
+                    <div class="price">₹599</div>
+                    <div class="discount">-5%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61bBLZd5iWL.AC_SL240_.jpg" alt="">
+                    <h3>Eggs</h3>
+                    <div class="price">₹89</div>
+                    <div class="discount">-20%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/518spFpRg+L.AC_SL240_.jpg" alt="">
+                    <h3>Chicken</h3>
+                    <div class="price">₹139</div>
+                    <div class="discount">-5%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51M-zNh7IgL.AC_SL240_.jpg" alt="">
+                    <h3>Prawns</h3>
+                    <div class="price">₹489</div>
+                    <div class="discount">-20%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/81aQAwUXphL.AC_SL240_.jpg" alt="">
+                    <h3>Chakki Atta</h3>
+                    <div class="price">₹99</div>
+                    <div class="discount">-20%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="deals-section">
+            <p style="font-size: 20px;font-weight: bold;">Fresh Fruits & Vegetables</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/81aRkv2DltL.AC_SL300_.jpg" alt="">
+                    <h3>Fresh Apples</h3>
+                    <div class="price">₹199</div>
+                    <div class="discount">-10%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51ugYaVEVQL.AC_SL300_.jpg" alt="">
+                    <h3>Organic Bananas</h3>
+                    <div class="price">₹59</div>
+                    <div class="discount">-8%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/610QNmGSrvL.AC_SL300_.jpg" alt="">
+                    <h3>Radish</h3>
+                    <div class="price">₹45</div>
+                    <div class="discount">-12%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61ZJhcdG7LL.AC_SL300_.jpg" alt="">
+                    <h3>Tomatoes</h3>
+                    <div class="price">₹39</div>
+                    <div class="discount">-15%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71GsHTwUwaL.AC_SL300_.jpg" alt="">
+                    <h3>Dragon fruits</h3>
+                    <div class="price">₹59</div>
+                    <div class="discount">-5%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61k83pTVP9L.AC_SL300_.jpg" alt="">
+                    <h3>Lemons</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51Lz6EQ8bkL.AC_SL300_.jpg" alt="">
+                    <h3>Guavus</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="deals-section">
+            <p style="font-size: 20px;font-weight: bold;">Dairy & Beverages</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51WmLtStneL.AC_SL240_.jpg" alt="">
+                    <h3>Organic Milk</h3>
+                    <div class="price">₹59</div>
+                    <div class="discount">-5%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51LvtNNMJ-L.AC_SL240_.jpg" alt="">
+                    <h3>Cheddar Cheese</h3>
+                    <div class="price">₹249</div>
+                    <div class="discount">-10%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/41umjWen5bL.AC_SL240_.jpg" alt="">
+                    <h3>Badam Milk</h3>
+                    <div class="price">₹99</div>
+                    <div class="discount">-12%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71kip8jehUL.AC_SL240_.jpg" alt="">
+                    <h3>Instant Coffee</h3>
+                    <div class="price">₹149</div>
+                    <div class="discount">-15%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/51GISAP5+4L.AC_SL240_.jpg" alt="">
+                    <h3>Yought</h3>
+                    <div class="price">₹59</div>
+                    <div class="discount">-5%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/517kCL5oQ9L.AC_SL240_.jpg" alt="">
+                    <h3>Milk Made</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61aeyWGZhpL.AC_SL240_.jpg" alt="">
+                    <h3>Curd</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="deals-section">
+            <p style="font-size: 20px;font-weight: bold;">Snacks</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61PnEz-88aL.AC_SL240_.jpg" alt="">
+                    <h3>Potato Chips</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61qDaaa99ZL.AC_SL240_.jpg" alt="">
+                    <h3>Chocolate Cookies</h3>
+                    <div class="price">₹99</div>
+                    <div class="discount">-15%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61pLkhiJCyL.AC_SL240_.jpg" alt="">
+                    <h3>Namkeen Mix</h3>
+                    <div class="price">₹79</div>
+                    <div class="discount">-18%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71uT7gelPJL.AC_SL240_.jpg" alt="">
+                    <h3>sev</h3>
+                    <div class="price">₹59</div>
+                    <div class="discount">-10%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/61jQcDD2upL.AC_SL240_.jpg" alt="">
+                    <h3>Murrkur</h3>
+                    <div class="price">₹59</div>
+                    <div class="discount">-5%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/81u6DZmurjL.AC_SL240_.jpg" alt="">
+                    <h3>Khatta Meetha</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/8124d0NJjVL.AC_SL240_.jpg" alt="">
+                    <h3>Too yumms</h3>
+                    <div class="price">₹49</div>
+                    <div class="discount">-20%</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+{% endblock content %}
+    

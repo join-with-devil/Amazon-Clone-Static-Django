@@ -1,0 +1,244 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<style>
+
+    /* Banner */
+    .banner {
+        width: 100%;
+        max-height: 400px;
+        overflow: hidden;
+    }
+    
+    .banner img {
+        width: 100%;
+        display: block;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px 20px;
+        background-color: white;
+        margin-top: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    /* Horizontal Scroll Section */
+    .horizontal-scroll {
+        display: flex;
+        overflow-x: auto;
+        background-color: white;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .horizontal-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .category-card {
+        flex: 0 0 auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .category-card img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+    
+    .category-card p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    /* Product Cards */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+        background-color: white;
+    }
+    
+    .product-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    .product-card h3 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    
+    .price {
+        color: #B12704;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .discount {
+        color: green;
+        font-size: 14px;
+    }
+
+</style>    
+
+
+
+
+
+    <div class="banner">
+        <img src="https://m.media-amazon.com/images/G/31/IN/Prime/AugART/PEA4/PC_1500x200_1.jpg" alt="Sale Banner">
+        <img src="https://m.media-amazon.com/images/G/31/CookwareDining/Aman/Jupiter/MSO/AugART25_Bankstripe_PC_01V4.jpg"
+            alt="Sale Banner">
+        <img src="https://m.media-amazon.com/images/G/31/CookwareDining/Aman/Jupiter/MSO/AugART25_Bankstripe_PC_02V4.jpg"
+            alt="Sale Banner">
+        <img src="https://m.media-amazon.com/images/G/31/CookwareDining/Aman/Jupiter/MSO/AugART25_Bankstripe_PC_V3_03V4.jpg"
+            alt="Sale Banner">
+    </div>
+
+    <div class="section-title">Shop by Category</div>
+    <div class="horizontal-scroll">
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/41Crv37t+eL.jpg" alt="">
+            <p>Mobiles</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/4130AKBEovL.jpg" alt="">
+            <p>Electronics</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/41mCtT91dtL.jpg" alt="">
+            <p>Home & Kitchen</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/31BDAx57DJL.png" alt="">
+            <p>Fashion</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/21NxZ8ZADIL.jpg" alt="">
+            <p>Beauty</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/21NxZ8ZADIL.jpg" alt="">
+            <p>Daily Needs</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/I/31BGVhTn56L.jpg" alt="">
+            <p>Grocery & Essentials</p>
+        </div>
+    </div>
+
+    <!-- Deals Section -->
+    <div class="section-title">Top Deals</div>
+    <div class="products-grid">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/lap/aurart/ascent/main/3_240x224.png" alt="">
+            <h3>ASUS</h3>
+            <div class="price">₹1,32,999</div>
+            <div class="discount">-20%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/headphone/unrec/img25/Carousal_boat.jpg" alt="">
+            <h3>Boat speakers</h3>
+            <div class="price">₹12,499</div>
+            <div class="discount">-15%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/lap/aurart/ascent/main/2_240x224.png" alt="">
+            <h3> DELL Laptop</h3>
+            <div class="price">₹79,999</div>
+            <div class="discount">-25%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/img22/PD_25/CoopTile_TCL55.png" alt="">
+            <h3>4K Smart TV</h3>
+            <div class="price">₹39,999</div>
+            <div class="discount">-30%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/IMG15/Irshad/AugART25/Haier-SBS.jpg" alt="">
+            <h3>HAier 356L</h3>
+            <div class="price">₹29,999</div>
+            <div class="discount">-30%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Wireless/Isha/Xiaomi/AUGART/D280677458_IN_WLD_Redmi_ACSENT_AugART25_240x224_1.jpg"
+                alt="">
+            <h3>Redmi Ascent</h3>
+            <div class="price">₹11,999</div>
+            <div class="discount">-30%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/G/31/IMG15/Irshad/AugART25/0/-LG-9-KG-front-load.jpg" alt="">
+            <h3>LG front Load</h3>
+            <div class="price">₹9,999</div>
+            <div class="discount">-30%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/419G9gkh+UL._SY445_SX342_.jpg" alt="">
+            <h3>SAMSUNG Eco bubbles</h3>
+            <div class="price">₹12,999</div>
+            <div class="discount">-30%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/31Tz8DcmevL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <h3>Cromton Water Heater</h3>
+            <div class="price">₹5,999</div>
+            <div class="discount">-30%</div>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/41M2ADXqd2L._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+            <h3>Aquaguad SafeTouch</h3>
+            <div class="price">₹7,999</div>
+            <div class="discount">-30%</div>
+        </div>
+    </div>
+    <div class="section-title">Shop Crazy Low Prices | Up to 80% off</div>
+    <div class="horizontal-scroll">
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonBazaar/AugART/PCPO/Mini-PCPO_PC-FSA-R1.jpg" alt="">
+            <p>Deals under ₹99</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonBazaar/AugART/PCPO/Mini-PCPO_PC-Men-R1.jpg" alt="">
+            <p>Mens Fashion from ₹199</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonBazaar/AugART/PCPO/Mini-PCPO_PC-Home.jpg" alt="">
+            <p>Home Decors from ₹199</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonBazaar/AugART/PCPO/Mini-PCPO_PC-Electronics.jpg"
+                alt="">
+            <p>Electronics from ₹99</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonBazaar/AugART/PCPO/Mini-PCPO_PC-Kitchen.jpg" alt="">
+            <p>Kitchen Tools from ₹79</p>
+        </div>
+        <div class="category-card">
+            <img src="https://m.media-amazon.com/images/G/31/AmazonBazaar/AugART/PCPO/Mini-PCPO_PC-Kids.jpg" alt="">
+            <p>Kids Corner from ₹179</p>
+        </div>
+    </div>
+
+
+    {% endblock content %}

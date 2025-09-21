@@ -1,0 +1,131 @@
+{% extends 'main.html' %}
+{% block content %}
+    <div id="leftdiv">
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Category</h1>
+        <i class="fa-solid fa-angle-left"></i> <span style="font: 14px Arial,sans-serif;">Electronics</span>
+        <h2 style="font: 14px Arial,sans-serif; font-weight:bold; margin-left: 25px;">Mobile & Accessories</h2>
+        <div style="margin-left: 30px; font: 14px Arial,sans-serif; line-height: 20px;">
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Mobile Accessories</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Mobile Broadband Devices</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Smartphones & Basic Mobiles</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Smartwatches</span></a>
+        </div>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Amazon Prime</h1>
+        <input type="checkbox" value="prime" id="prime">
+        <label for="prime">prime</label>
+        
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Delivery Day</h1>
+        <input type="checkbox" value="Get It by Tomorrow" id="getit">
+        <label for="getit">Get It by Tomorrow</label>
+        
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Brands</h1>
+        <div style="line-height: 25px;">
+            <input type="checkbox" value="Apple" id="apple">
+            <label for="apple">Apple</label> <br>
+            <input type="checkbox" value="Samsung" id="sam">
+            <label for="sam">Samsung</label> <br>
+            <input type="checkbox" value="OnePlus" id="oneplus">
+            <label for="oneplus">OnePlus</label> <br>
+            <input type="checkbox" value="iqoo" id="iqu">
+            <label for="iqu">iQOO</label> <br>
+            <input type="checkbox" value="redmi" id="red">
+            <label for="red">Redmi</label> <br>
+            <input type="checkbox" value="boat" id="boat">
+            <label for="boat">boAt</label> <br>
+            <input type="checkbox" value="VIVO" id="vivo">
+            <label for="vivo">VIVO</label> <br>
+            <input type="checkbox" value="realme" id="realme">
+            <label for="realme">realme</label> <br>
+            <input type="checkbox" value="nokia" id="nokia">
+            <label for="nokia">Nokia</label> <br>
+            <input type="checkbox" value="oppo" id="oppo">
+            <label for="oppo">OPPO</label> 
+        </div> <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Customer Reviews</h1>
+        <div style="color: orange;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> 
+        </div>
+        <p style="color: black; margin-left: 100px; margin-top: -10px;">& Up</p>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Item Condition</h1>
+        <div style="line-height: 25px;">
+            <input type="checkbox" value="new" id="new">
+            <label for="new">New</label> <br>
+            <input type="checkbox" value="renewed" id="renew">
+            <label for="renew">Renewed</label> 
+        </div>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Price</h1>
+        <div style="line-height: 20px;">
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Under $1,000</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>$1,000 - $5,000</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>$5,000 - $10,000</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>$10,000 - $20,000</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Over $20,000</span></a>
+        </div>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Deals & Discounts</h1>
+        <div style="line-height: 20px;">
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>All Discounts</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Today's Deals</span></a>
+        </div>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Made for Amazon Brands</h1>
+        <input type="checkbox" value="made for" id="made">
+        <label for="made">Made for Amazon</label> 
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Seller</h1>
+        <div style="line-height: 20px;">
+            <input type="checkbox" value="CR" id="1">
+            <label for="1">cocoblu Retail</label> <br>
+            <input type="checkbox" value="CRPL" id="2">
+            <label for="2">Clicktech Retail Private Ltd</label> <br>
+            <input type="checkbox" value="CB" id="3">
+            <label for="3">Clicktech Business</label> <br>
+            <input type="checkbox" value="the" id="4">
+            <label for="4">TheGiftKart</label> <br>
+            <input type="checkbox" value="von" id="5">
+            <label for="5">VONZEE®</label> <br>
+            <input type="checkbox" value="saola" id="6">
+            <label for="6">Saola</label> <br>
+            <input type="checkbox" value="dizoro" id="7">
+            <label for="7">DIZORO</label> 
+        </div>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">New Arrivals</h1>
+        <div style="line-height: 20px;">
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Last 30 days</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>Last 90 days</span></a>
+        </div>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Top Brands in Electronics</h1>
+        <input type="checkbox" value="topbrand" id="top">
+        <label for="top">Top Brands</label> 
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Availability</h1>
+        <input type="checkbox" value="outofstock" id="top2">
+        <label for="top2">Include Out of Stock</label>
+        <br>
+        <h1 style="font: 14px Arial,sans-serif; font-weight:bold;">Discount</h1>
+        <div style="line-height: 20px;">
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>10% Off or more</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>25% Off or more</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>35% Off or more</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>50% Off or more</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>60% Off or more</span></a> <br>
+            <a style="text-decoration: none; color:#0F1111;" href=""><span>70% Off or more</span></a> <br>
+        </div>
+    </div>
+    <a>
+        <div style="margin-left: 230px; margin-top: -112%;">
+            <img height="64" width="231px"  src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/Navigator/Accessories.jpg" alt="">
+            <img height="64" width="231px" src="https://m.media-amazon.com/images/G/31/img23/Wireless/nbshagun/CLP/2025/28Feb/OnePlus-13R-.jpg" alt=""> <br>
+            <img style="padding: 0 2%;height: 720px;width: 100%;" src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/Jupiter25/Ingress1.gif" alt="">
+            <img style="padding: 0 2%;width: 100%;" src="https://m.media-amazon.com/images/G/31/img23/Wireless/rohimak/BITA_AWARDS_2025/1st_sept/CLP_Banner_1._CB801575797_.jpg" alt="">
+            <a href=""><img style="padding: 0 2%;width: 100%;" src="https://m.media-amazon.com/images/G/31/img23/Wireless/rohimak/Survey/1242x450_new.jpg" alt=""></a>
+            <img style="width: 100%;padding: 0 2%;margin-top: 30px;"  src="https://m.media-amazon.com/images/G/31/img23/Wireless/CatPage/Revamp2025/TDOW/AprRevamp/Top-deals_1_01.jpg" alt="">
+            <img style="width: 100%;padding: 0 2%;margin-top: 20px;" src="https://m.media-amazon.com/images/G/31/img23/Wireless/OnePlus/30Aug/Redmi_13_5G_Prime_Copy_1_1242x628._CB801368448_.png" alt="">
+        </div>
+    </main>
+    
+  {% endblock content %}

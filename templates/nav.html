@@ -1,0 +1,72 @@
+<nav class="nav">
+    <ul>
+        <li class="l1">
+            <a href="{% url 'home' %}" style="border: none;outline: none;">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </a>
+        </li>
+        <li class="l2">
+
+            <p style="color: gray;height: 10px;width: 200px;margin-left: 20px;" class="p1">Delevaring to Hydrabad
+               50001 </p>
+            <p class="p2"><i class='bxr  bx-location'></i> Update Location</p>
+        </li>
+        <li class="l3">
+            <div
+                style="width: 9%; background-color:rgb(199, 194, 194);margin-top: -8px;padding: 10px;border-top-left-radius:7px;
+                    border-bottom-left-radius:7px;font-size: 15px;font-weight: 700;height: 40px;display: flex;gap: 3px;color:rgb(104, 102, 102) ;">
+                All <i class='bxr  bx-caret-down'></i>
+            </div>
+            <div>
+                <input
+                    style="width: 470px;height: 40px;padding: 16px 2%;font-size: 16px;outline: none;border: none;margin-top: -20px;"
+                    type="text" placeholder="Search amazon.in">
+            </div>
+            <div>
+                <button
+                    style="margin-top: -8px;background-color: #febd69;outline: none;border: none;border-bottom-right-radius:7px;border-top-right-radius:7px;">
+                    <i style="width: 45px; padding: 10px;font-size:20px;color: rgb(104, 102, 102);font-weight: 700;height: 40px;"
+                        class='bxr  bx-search'>
+                    </i>
+                </button>
+            </div>
+        </li>
+        <li class="l4">
+            <span style="display: flex;margin-top: 13px;color: white;">EN<i style="padding-top: 6px;"
+                    class='bxr  bx-caret-down'></i></span>
+        </li>
+        <li class="l5">
+            <p style="font-size: 14;">Hello,sign in</p>
+            <p style="display: flex;flex-direction: row;margin-top: -13px;">Account&List<i style="padding-top: 6px;"
+                    class='bxr  bx-caret-down'></i></p>
+        </li>
+        <li class="l6">
+            <p>Return</p>
+            <p style="margin-top: -15px;width: 50px;">& Orders</p>
+        </li>
+        <li class="l7">
+            <span><i style="font-size: 40px;filter: invert(1);" class='bxr  bx-cart-plus'></i></span>
+            <h4 style="padding-top: 20px;font-size: 14px;font-weight: 700;color: white;">Cart</h4>
+        </li>
+    </ul>
+</nav>
+<section class="undernav">
+    <ul style="padding: 10px 1%;">
+        <li><a style="text-decoration: none;color: white;" href=""><i style="font-size: 22px;" class='bxr  bx-menu'></i> All</a></li>
+        <li><a style="text-decoration: none;color: white;" href="{% url 'fresh' %}">Fresh <i class='bxr  bx-caret-down'></i></a></li>
+        <a style="text-decoration: none;color: white;" href="{% url 'mxplayer' %}"><li>MXPlayer</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'sell' %}"><li>Sell</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'bestseller' %}"><li>Bestseller</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'todaydeals' %}"><li style="width: 88px;">Today's Deals</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'mobiles' %}"><li>Mobiles</li></a>
+        <a style="text-decoration: none;color: white;" href="#"><li>Prime <i class='bxr  bx-caret-down'></i></li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'customserv' %}"><li style="width: 120px;">Customer Service</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'electronics' %}"><li>Electronics</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'fashion' %}"><li>Fashion</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'newrelease' %}"><li style="width: 88px;">New Releases</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'handk' %}"><li style="width: 110px;">Home & Kitchen</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url  'amazonpay' %}"><li style="width: 88px;">Amazon Pay</li></a>
+        <a style="text-decoration: none;color: white;" href="{% url 'computer' %}"><li>Computers</li></a>
+    </ul>
+</section>

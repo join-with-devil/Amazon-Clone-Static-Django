@@ -1,0 +1,227 @@
+
+{% extends 'main.html' %}
+{% block content %}
+<style>
+
+    .main {
+        /* background-color: red; */
+        height: fit-content;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .left {
+        /* background-color: blue; */
+        height: fit-content;
+        width: 17%;
+        border-right: 1px solid gray;
+        padding-left: 20px;
+    }
+
+    .right {
+        /* background-color: yellow; */
+        height: fit-content;
+        width: 83%;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .product-slider {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-bottom: 10px;
+    }
+
+    .product-slider::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .product-slider::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }
+
+    .product {
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        width: 220px;
+        flex: 0 0 auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        height: 160px;
+        object-fit: contain;
+    }
+
+    .product h3 {
+        font-size: 16px;
+        margin: 0px 0 0px;
+    }
+
+    .brand {
+        font-size: 14px;
+        color: gray;
+        margin-bottom: 8px;
+        padding-right: 140px;
+    }
+
+    .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: #e63946;
+        padding-right: 140px;
+
+    }
+
+    .old-price {
+        font-size: 14px;
+        text-decoration: line-through;
+        color: #777;
+        margin-left: 5px;
+        padding-right: 140px;
+
+    }
+
+    .rating {
+        margin-top: 5px;
+        color: orange;
+        font-size: 14px;
+        padding-right: 140px;
+
+    }
+</style>
+
+               
+    <div class="navunder">
+        <ul style="display: flex;gap: 30px;font-size: 13px;list-style: none;">
+            <li>Electronics Mobiles & Accessories</li>
+            <li>Laptops & Accessories</li>
+            <li>TV & Home Entertainment</li>
+            <li>Audio</li>
+            <li>Cameras</li>
+            <li>Computer Peripherals</li>
+            <li>Smart Technology</li>
+            <li>Musical Instruments</li>
+            <li>Office & Stationery</li>
+        </ul>
+    </div>
+
+    <section class="main">
+        <div class="left">
+            <h4 style="font-size: 17px;">Category</h4>
+            <h5 style="font-size: 15px;">Computers & Accessories</h5>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Accessories & Peripherals</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Components</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Desktops</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>External Devices & Data Storage</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Laptops</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Monitors</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Networking Devices</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Printers, Inks & Accessories</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Scanners</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Tablets</p></a>
+            <a style="text-decoration: none;line-height: 13px;margin-right: 20px;" href=""><p>Warranties</p></a>
+        </div>
+        <div class="right">
+            <div style="display: flex;justify-content: space-between;padding: 15px 15%;">
+                <a style="text-decoration: none;" href="">
+                    <h3>PC Accessories</h3>
+                </a>
+                <a style="text-decoration: none;" href="">
+                    <h3>Gaming Accessories</h3>
+                </a>
+            </div>
+            <div>
+                <img style="margin-top: -20px;height: 200px;width: 100%;padding: 0 1%;"
+                    src="https://m.media-amazon.com/images/G/31/img24hp/tease/other/g/1/PC-Header_1500x300_1._CB801585994_.jpg" alt="">
+            </div>
+
+            <img style="margin-top: 10px;width: 100%;height: 500px;padding: 0 1%;" src="https://m.media-amazon.com/images/G/31/img23/Wireless/rohimak/BITA_AWARDS_2025/CLP_Banner.jpg" alt="">
+
+            <div class="container">
+                <div class="title">New launches | Gaming accessories</div>
+
+                <div class="product-slider">
+                    <!-- Product 1 -->
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/21CA6BhAt3S._SR480,440_.jpg" alt="Razer Mouse">
+                        <h3>Razer DeathAdder V4 Pro Wireless</h3>
+                        <div class="brand">Razer</div>
+                        <div>
+                            <span class="price">₹15,999</span>
+                            <span class="old-price">₹27,999</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/41GMgZG6zdL._SR480,440_.jpg" alt="JBL Headset">
+                        <h3>JBL Quantum 100M2</h3>
+                        <div class="brand">JBL</div>
+                        <div>
+                            <span class="price">₹2,999</span>
+                            <span class="old-price">₹4,499</span>
+                        </div>
+                        <div class="rating">⭐⭐⭐⭐☆ (2,192)</div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/31m9wGKClGL._SR480,440_.jpg" alt="Razer Earbuds">
+                        <h3>Razer Hammerhead V3</h3>
+                        <div class="brand">Razer</div>
+                        <div>
+                            <span class="price">₹5,675</span>
+                            <span class="old-price">₹9,999</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Electronics/Megamenu/CEPC_Megasubnav_MI_soundrecording.jpg" alt="Razer Mic">
+                        <h3>Razer Seiren V3 Mini USB Mic</h3>
+                        <div class="brand">Razer</div>
+                        <div>
+                            <span class="price">₹4,082</span>
+                            <span class="old-price">₹6,999</span>
+                        </div>
+                        <div class="rating">⭐⭐⭐⭐☆ (315)</div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/71D9cxs+rXL.AC_SX500.jpg" alt="Kreo Mouse">
+                        <h3>Kreo Gaming Mouse</h3>
+                        <div class="brand">Kreo</div>
+                        <div>
+                            <span class="price">₹999</span>
+                            <span class="old-price">₹1,499</span>
+                        </div>
+                        <div class="rating">⭐⭐⭐⭐⭐ (838)</div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+
+            </section>
+
+        </div>
+    </section>
+    {% endblock content %}
