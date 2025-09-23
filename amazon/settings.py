@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jct(2(c@hxwb9!i2=-%+e=()^ci4=&$(_w5+&d*xp8%rb3$3_0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['amazon-clone-django.onrender.com']
 
 
 # Application definition
