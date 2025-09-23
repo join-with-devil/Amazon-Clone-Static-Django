@@ -132,65 +132,57 @@
     margin-bottom: 20px;
 }
 /* ===================== */
-/* ✅ MEDIA QUERIES BELOW */
+/* Tablets: 600px - 992px */
 /* ===================== */
-
-/* Tablets (<= 1024px) */
-@media (max-width: 1024px) {
-    .cards {
-        grid-template-columns: auto auto auto; /* 3 cards per row */
+@media (min-width: 600px) and (max-width: 992px) {
+    .nav ul {
+        gap: 10px;
+        font-size: 14px;
+        padding: 8px 2%;
     }
-    .add-in {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+
+    .nav ul li img {
+        width: 80px;
+    }
+
+    .l3 input {
+        width: 300px !important;
     }
 }
 
-/* Large Phones / Small Tablets (<= 768px) */
-@media (max-width: 768px) {
-    .cards {
-        grid-template-columns: auto auto; /* 2 cards per row */
-        gap: 20px;
-    }
-    .cards .card {
-        width: 100%;
+/* ===================== */
+/* Mobiles: Below 600px  */
+/* ===================== */
+@media (max-width: 599px) {
+    .nav {
+        flex-direction: column;
         height: auto;
     }
-    .bikes {
-        height: auto;
-    }
-    .bikes img {
-        width: 100%;
-        height: auto;
-    }
-    .add-in {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
 
-/* Small Phones (<= 480px) */
-@media (max-width: 480px) {
-    .cards {
-        grid-template-columns: auto; /* 1 card per row */
+    .nav ul {
+        flex-direction: column;
         gap: 15px;
-    }
-    .cards .card {
-        width: 100%;
         height: auto;
         padding: 10px;
     }
-    #fashion {
+
+    .l3 {
         flex-direction: column;
-        align-items: flex-start;
+        gap: 8px;
     }
-    #fash2,
-    #fash3,
-    #fash4,
-    #fash5,
-    #fash6 {
-        flex-direction: column;
+
+    .l3 input {
+        width: 100% !important;
+    }
+
+    .undernav ul {
+        flex-wrap: wrap;
         gap: 10px;
+        justify-content: center;
+    }
+
+    .undernav ul li {
+        font-size: 12px;
+        margin: 0 5px;
     }
 }

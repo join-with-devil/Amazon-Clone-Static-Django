@@ -201,83 +201,81 @@
     border: 1px solid white;
 }
 
-/* ===================== */
-/* ✅ MEDIA QUERIES */
-/* ===================== */
+/* Default (desktop) styles are already applied in your CSS */
 
-/* Tablets (<= 1024px) */
-@media (max-width: 1024px) {
-    .nav ul {
-        gap: 20px;
-        padding: 10px;
+/* ===================== */
+/* Tablets: 600px - 992px */
+/* ===================== */
+@media (min-width: 600px) and (max-width: 992px) {
+    nav.nav ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
     }
-    .l2 {
-        font-size: 12px;
+
+    nav.nav ul li {
+        font-size: 14px;
+        margin: 5px 0;
     }
-    .l2 .p2 i {
-        font-size: 18px;
+
+    nav.nav input {
+        width: 300px !important; /* smaller search bar */
     }
-    .undernav ul {
-        gap: 12px;
+
+    nav.nav .l3 {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    section.undernav ul {
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    section.undernav ul li {
+        padding: 5px;
     }
 }
 
-/* Mobile (<= 768px) */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .nav ul {
+/* ===================== */
+/* Mobiles: Below 600px  */
+/* ===================== */
+@media (max-width: 599px) {
+    nav.nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        height: auto;
-        padding: 10px 0;
     }
 
-    .nav ul li {
-        width: auto;
+    nav.nav ul li {
+        font-size: 13px;
         text-align: center;
     }
 
-    .l7 {
-        margin-right: 0;
-        justify-content: center;
+    nav.nav input {
+        width: 80% !important; /* full-width search bar */
+        margin: 5px auto;
     }
 
-    .undernav {
+    nav.nav .l3 {
         flex-direction: column;
-        height: auto;
+        align-items: center;
+        width: 100%;
     }
 
-    .undernav ul {
+    section.undernav ul {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .undernav ul li {
-        width: auto;
         font-size: 13px;
-        margin-top: 0;
-    }
-}
-
-/* Small Phones (<= 480px) */
-@media (max-width: 480px) {
-    .nav ul .l1 img {
-        width: 80px; /* Smaller logo */
+        gap: 6px;
     }
 
-    .l2 {
-        font-size: 11px;
-    }
-
-    .undernav ul li {
-        font-size: 12px;
+    section.undernav ul li {
+        width: auto;
         padding: 5px;
     }
 }
