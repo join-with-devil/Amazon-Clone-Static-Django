@@ -101,3 +101,83 @@
 .undernav ul li:hover {
     border: 1px solid white;
 }
+/* ===================== */
+/* ✅ MEDIA QUERIES */
+/* ===================== */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+    .nav ul {
+        gap: 20px;
+        padding: 10px;
+    }
+    .l2 {
+        font-size: 12px;
+    }
+    .l2 .p2 i {
+        font-size: 18px;
+    }
+    .undernav ul {
+        gap: 12px;
+    }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav ul li {
+        width: auto;
+        text-align: center;
+    }
+
+    .l7 {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .undernav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .undernav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .undernav ul li {
+        width: auto;
+        font-size: 13px;
+        margin-top: 0;
+    }
+}
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+    .nav ul .l1 img {
+        width: 80px; /* Smaller logo */
+    }
+
+    .l2 {
+        font-size: 11px;
+    }
+
+    .undernav ul li {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

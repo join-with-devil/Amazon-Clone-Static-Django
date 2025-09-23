@@ -9,3 +9,46 @@ padding: 20px 0.1%;
     width: 100%;
     height: 400px;
 }
+/* ===================== */
+/* ✅ MEDIA QUERIES FOR FOOTER */
+/* ===================== */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+    .foot1 {
+        height: auto; /* Let content decide height */
+        padding: 15px 2%;
+    }
+    .footer {
+        height: auto;
+        padding: 20px 2%;
+    }
+}
+
+/* Phones (<= 768px) */
+@media (max-width: 768px) {
+    .foot1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        height: auto;
+        padding: 15px 5%;
+    }
+    .footer {
+        height: auto;
+        padding: 20px 5%;
+    }
+}
+
+/* Small Phones (<= 480px) */
+@media (max-width: 480px) {
+    .foot1 {
+        font-size: 14px; /* Slightly smaller text */
+        padding: 10px 5%;
+    }
+    .footer {
+        font-size: 14px;
+        padding: 15px 5%;
+    }
+}
